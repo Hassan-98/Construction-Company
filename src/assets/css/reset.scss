@@ -1,0 +1,236 @@
+/*  { General Rules & Styles For Elements }   */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+$mainColor: #341f97;
+$h1: 48px;
+$h2: 38px;
+$h3: 30px;
+$h4: 24px;
+$h5: 18px;
+$h6: 15px;
+$p: 15px;
+
+* {
+    padding: 0;
+    margin: 0;
+    transition: all 0.4s ease-in-out;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: $h1;
+}
+
+h2 {
+    font-size: $h2;
+}
+
+h3 {
+    font-size: $h3;
+}
+
+h4 {
+    font-size: $h4;
+}
+
+h5 {
+    font-size: $h5;
+}
+
+h6 {
+    font-size: $h6;
+}
+
+p {
+    color: #8795a1;
+    line-height: 25px;
+    font-size: $p;
+}
+
+span {
+    display: inline-block;
+}
+
+pre, code, kbd, samp {
+    font-family: monospace, "Consolas";
+    font-size: 1em;
+}
+
+b, strong {
+    font-weight: bolder;
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+ul {
+    li{
+        list-style: none;
+        padding: 10px 15px;
+        background: #f9fafb;
+        color: #999;
+    }
+}
+button {
+    background: $mainColor;
+    padding: 10px 30px;
+    color: #fff;
+    border: 1px solid #999;
+    outline: none;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    &:hover {
+        transform: scale(0.98);
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+input, textarea, select {
+    background: #F8F8F8;
+    border-radius: 5px;
+    border: 2px solid #F2F2F2;
+    padding: 12px 20px;
+    outline: none;
+    font-size: 15px;
+    resize: none;
+    &:focus {
+        border-color: $mainColor;
+    }
+}
+
+input{
+    &[type="button"],
+    &[type="reset"],
+    &[type="submit"] {
+      -webkit-appearance: button;
+    }
+    &[type="checkbox"],
+    &[type="radio"] {
+        box-sizing: border-box;
+        padding: 0;
+    }
+}
+
+table {
+    max-width: 100%;
+    tr {
+        th, td {
+            font-size: 17px;
+            border: 1px solid #ccc;
+            padding: 7px 25px;
+        }
+        th {
+            text-align: center;
+        }
+    }
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+
+/***** Adjusting Font Sizes For All Screens *****/
+@media (max-width: 992px) {
+    h1 {
+        font-size: $h1 / 100 * 85;
+    }
+    h2 {
+        font-size: $h2 / 100 * 85;
+    }
+    h3 {
+        font-size: $h3 / 100 * 85;
+    }
+    h4 {
+        font-size: $h4 / 100 * 85;
+    }
+    h5 {
+        font-size: $h5 / 100 * 87.5;
+    }
+    h6 {
+        font-size: $h6 / 100 * 90;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: $h1 / 100 * 75;
+    }
+    h2 {
+        font-size: $h2 / 100 * 75;
+    }
+    h3 {
+        font-size: $h3 / 100 * 75;
+    }
+    h4 {
+        font-size: $h4 / 100 * 77.5;
+    }
+    h5 {
+        font-size: $h5 / 100 * 85;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: $h1 / 100 * 65;
+    }
+    h2 {
+        font-size: $h2 / 100 * 65;
+    }
+    h3 {
+        font-size: $h3 / 100 * 67;
+    }
+    button {
+        padding: 8px 20px;
+    }
+    input, textarea {
+        padding: 10px 16px;
+        width: 100%;
+    }
+    button, input, textarea {
+        font-size: 13px;
+    }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Abril+Fatface&family=Poppins&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+  }
+
+html, body {
+    overflow-x: hidden;
+}
